@@ -1,27 +1,31 @@
 # f2e-showcase-vite
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3 in Vite. + tailwind css .
 
 ## multi-page app
 
 entry points
-dev :
 
-- http://localhost:5173/
-- http://localhost:5173/meow/
-  prod :
-- https://minilabmemo.github.io/f2e-showcase-vite/
-- https://minilabmemo.github.io/f2e-showcase-vite/meow/
+- dev :
+  - http://localhost:5173/
+  - http://localhost:5173/meow/
+- prod :
+  - https://minilabmemo.github.io/f2e-showcase-vite/
+  - https://minilabmemo.github.io/f2e-showcase-vite/meow/
 
 ### meowskka 頁面
 
-- 功能說明頁面請點擊[f2e-election-meowsakka][https://github.com/minilabmemo/f2e-election-meowsakka/blob/main/README.md]
+- 功能說明頁面請點擊 [f2e-election-meowsakka](https://github.com/minilabmemo/f2e-election-meowsakka/blob/main/README.md)
 
 ## deploy
 
 Use .github/workflows Actions.
 
 ---
+
+# f2e-showcase-vite
+
+This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
