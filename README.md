@@ -37,6 +37,7 @@ npm run dev
 
 ```sh
 npm run build
+npm run preview 預覽
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
@@ -75,4 +76,11 @@ entry points
 dev :
 - http://localhost:5173/
 - http://localhost:5173/meow/
+prod
+- https://minilabmemo.github.io/f2e-showcase-vite/
+- https://minilabmemo.github.io/f2e-showcase-vite/meow/
 ```
+
+### deploy
+
+Use .github/workflows Actions.
