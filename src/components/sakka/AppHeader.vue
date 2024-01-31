@@ -1,10 +1,13 @@
 <template>
-  <div class="flex items-center h-[135px]">
+  <div class="flex items-center "  ref="hBgRef">
     <header
       ref="hRef"
       class="transition-[height] fixed top-0 left-1/2 -translate-x-1/2 z-10 w-full max-w-screen-3xl flex items-center justify-between px-[60px] bg-white text-blue-150 font-semibold fill-white drop-shadow-default"
     >
-      <div class="logo w-[142px]">
+      <div class="logo "
+      :class="matchPhone ? 'w-[100px]' : 'w-[142px]'"
+      >
+        
         <img :src="logo" alt="logo" />
       </div>
       <nav class="m-auto hidden md:block">
@@ -44,26 +47,48 @@ export default defineComponent({
 <script setup lang="ts">
 import NavLink from "@/components/sakka/NavLink.vue";
 import { ref, onMounted, onUnmounted } from "vue";
+import { useMediaQuery } from "@vueuse/core";
+
+const matchPhone = useMediaQuery("(max-width: 768px)");
 
 const hRef = ref<HTMLElement | null>(null);
-
+const hBgRef = ref<HTMLElement | null>(null);
+const headerHeight="135px"
+const headerHeightSmall="95px"
+const headerHeightToSmall="87px"
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
+
   if (scrollY > 100) {
+    if (hBgRef.value) {
+      hBgRef.value.style.height = headerHeightToSmall;
+    }
     if (hRef.value) {
       hRef.value.style.transition = ".5s";
-      hRef.value.style.height = "100px";
+      hRef.value.style.height =headerHeightToSmall;
     }
   } else {
+    if (hBgRef.value) {
+      hBgRef.value.style.height = matchPhone.value? headerHeightSmall:headerHeight;
+    }
     if (hRef.value) {
       hRef.value.style.transition = "0s";
-      hRef.value.style.height = "135px";
+      hRef.value.style.height = matchPhone.value? headerHeightSmall:headerHeight;
     }
   }
 };
 
+
+
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
+  if (hRef.value) {
+    hRef.value.style.height =matchPhone.value? headerHeightSmall:headerHeight;
+   
+    }
+  if (hBgRef.value) {
+      hBgRef.value.style.height =matchPhone.value? headerHeightSmall:headerHeight;
+    }
 });
 
 onUnmounted(() => {
