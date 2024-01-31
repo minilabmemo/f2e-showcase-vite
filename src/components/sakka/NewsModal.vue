@@ -10,6 +10,7 @@
         :class="[
           'activity',
           'flex',
+          'pt-2',
           index % 2 === 0 ? '' : 'flex-row-reverse',
           'relative',
           'z-10',
@@ -39,7 +40,7 @@
                 <img :src="`${item.src} `" alt="a1_photo" />
               </div>
 
-              <!-- Vue 中的条件渲染 -->
+             
               <template v-if="!matches">
                 <div
                   v-if="index % 2 === 0"
