@@ -95,8 +95,7 @@ import { ref, onMounted } from "vue";
 import { useMediaQuery } from "@vueuse/core";
 const matches = useMediaQuery("(max-width: 768px)");
 
-const lineRef = ref(null);
-
+const lineRef = ref<HTMLElement | null>(null);
 const handleScroll = () => {
   const modalElem = document.getElementById("newsModal");
   const sectionElement = document.getElementById("firstSection");

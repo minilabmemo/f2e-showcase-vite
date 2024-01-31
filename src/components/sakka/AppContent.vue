@@ -56,7 +56,7 @@
         class="carousel-bg rotate-[15deg] overflow-hidden self-center w-[120vw]"
       >
         <AppSwiper
-          :newsData="duplicatedNewsData"
+          :newsData="newsData"
           :title="title"
           @updateTitle="updateTitle"
         />
@@ -213,11 +213,7 @@ import { onBeforeUpdate, ref } from "vue";
 import AppTitle from "@/components/sakka/AppTitle.vue";
 import AppSwiper from "@/components/AppSwiper.vue";
 import { newsData } from "@/utils/newsData";
-const duplicatedNewsData = ref([]);
 
-onBeforeUpdate(() => {
-  duplicatedNewsData.value = [...newsData, ...newsData];
-});
 
 import BG from "@/assets/images/BG_top.png";
 import banner from "@/assets/images/banner_click.png";

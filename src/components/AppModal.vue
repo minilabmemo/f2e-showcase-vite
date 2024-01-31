@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import { defineEmits } from "vue";
-const emit = defineEmits(["response"]);
+const emit = defineEmits(["closeModal"]);
 const closeModal = () => {
   emit("closeModal");
 };

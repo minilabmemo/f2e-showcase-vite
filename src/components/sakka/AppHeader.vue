@@ -45,7 +45,7 @@ export default defineComponent({
 import NavLink from "@/components/sakka/NavLink.vue";
 import { ref, onMounted, onUnmounted } from "vue";
 
-const hRef = ref(null);
+const hRef = ref<HTMLElement | null>(null);
 
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
