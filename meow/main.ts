@@ -7,7 +7,7 @@ import "@/assets//styles/notosanstc.css";
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import App from './MeowApp.vue'
+import App from '../src/pages/meow/MeowApp.vue'
 
 
 const app = createApp(App)
