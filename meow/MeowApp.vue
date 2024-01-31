@@ -5,5 +5,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <template>
   123
+  <div class="bg-red-200">23</div>
   <HelloWorld msg="page did it!" />
 </template>

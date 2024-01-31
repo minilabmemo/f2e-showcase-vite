@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <div class="bg-red-200">red bg by tailwind css</div>
   </div>
+
 </template>
 
 <style>
@@ -9,6 +11,8 @@
   .about {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 }
