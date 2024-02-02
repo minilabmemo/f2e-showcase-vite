@@ -208,10 +208,9 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeUpdate, ref } from "vue";
-
+import { ref } from "vue";
 import AppTitle from "@/components/sakka/AppTitle.vue";
-import AppSwiper from "@/components/AppSwiper.vue";
+import AppSwiper from "@/components/sakka/AppSwiper.vue";
 import { newsData } from "@/utils/newsData";
 
 
@@ -227,7 +226,7 @@ const title = ref(newsData[0].title);
 function updateTitle(newTitle: string) {
   title.value = newTitle;
 }
-import AppModal from "@/components/AppModal.vue";
+import AppModal from "@/components/sakka/AppModal.vue";
 import NewsModal from "@/components/sakka/NewsModal.vue";
 const isAboutModalVisible = ref(false);
 const toggleAboutModal = () => {
@@ -250,6 +249,7 @@ const closeNewsModal = () => {
 };
 
 import { useIntersectionObserver } from "@vueuse/core";
+
 const targetService = ref(null);
 const targetServiceIsVisible = ref(false);
 const { stop } = useIntersectionObserver(

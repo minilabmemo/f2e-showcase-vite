@@ -6,12 +6,12 @@
       </div>
       <div class="text-black-150 text-2xl flex my-2">
         <div>
-          <div class="m-3">104 專區</div>
-          <div class="m-3">人才招募</div>
+          <h4 class="m-3">104 專區</h4>
+          <h4 class="m-3">人才招募</h4>
         </div>
         <div>
-          <div class="m-3">友善連結</div>
-          <div class="m-3">小額捐款</div>
+          <h4 class="m-3">友善連結</h4>
+          <h4 class="m-3">小額捐款</h4>
         </div>
 
         <div></div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="h-[5px] bg-red-250"></div>
-    <div class="text-black-150 text-2xl flex justify-center pb-8">
+    <div class="copyright text-black-150 text-2xl flex justify-center pb-8">
       © 2023 喵薩卡 版權所有。
     </div>
   </div>

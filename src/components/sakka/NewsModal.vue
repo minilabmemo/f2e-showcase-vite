@@ -90,7 +90,7 @@
 </template>
 
 <script setup lang="ts">
-import AppModal from "@/components/AppModal.vue";
+import AppModal from "@/components/sakka/AppModal.vue";
 import { newsData } from "@/utils/newsData";
 import { ref, onMounted } from "vue";
 import { useMediaQuery } from "@vueuse/core";
