@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center flex-col bg-orange-150">
     <div class="flex justify-around items-center flex-wrap gap-5 p-7 w-[90%]">
       <div class="w-[313px]">
-        <img src="@/assets/images/logo.svg" alt="logo" />
+        <img class="img" src="@/assets/images/logo.svg" alt="logo" />
       </div>
       <div class="text-black-150 text-2xl flex my-2">
         <div>

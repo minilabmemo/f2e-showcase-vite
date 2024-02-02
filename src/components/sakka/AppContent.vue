@@ -8,13 +8,13 @@
         class="border-y-4 border-pink-default bg-white flex flex-nowrap overflow-hidden py-3 font-bold"
       >
         <div
-          class="text whitespace-nowrap text-3xl text-pink-default animate-marquee"
+          class="text whitespace-nowrap text-xl md:text-3xl text-pink-default animate-marquee"
         >
           立委候選人請支持貓黨 1 號＼＼喵薩卡／／立委候選人請支持貓黨 1
           號＼＼喵薩卡／／立委候選人請支持貓黨 1 號＼＼喵薩卡／／
         </div>
         <div
-          class="text whitespace-nowrap text-3xl text-pink-default animate-marquee"
+          class="text whitespace-nowrap text-xl md:text-3xl text-pink-default animate-marquee"
         >
           立委候選人請支持貓黨 1 號＼＼喵薩卡／／立委候選人請支持貓黨 1
           號＼＼喵薩卡／／立委候選人請支持貓黨 1 號＼＼喵薩卡／／
@@ -28,23 +28,23 @@
     >
       <AppTitle text="政策議題"></AppTitle>
 
-      <div class="flex flex-col items-center p-10">
-        <h2 class="text-[32px] font-semibold text-red-250 m-[22px]">
+      <div class="flex flex-col items-center p-3 md:p-10">
+        <h2 class="text-[24px] md:text-[32px] font-semibold text-red-250 m-[22px]">
           我們的訴求
         </h2>
-        <div class="text-2xl font-medium text-black-default leading-[50px]">
+        <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
           讓庫拉皮卡下船！
         </div>
-        <div class="text-2xl font-medium text-black-default leading-[50px]">
+        <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
           不讓貓貓過重，過重也是一種虐待！
         </div>
-        <div class="text-2xl font-medium text-black-default leading-[50px]">
+        <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
           為毛孩子謀福利！推動寵物醫療保障方案。
         </div>
-        <div class="text-2xl font-medium text-black-default leading-[50px]">
+        <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
           打造休閒天堂！推廣寵物休閒與娛樂場所。
         </div>
-        <div class="text-2xl font-medium text-black-default leading-[50px]">
+        <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
           推廣寵物飼養教育，讓愛更加專業。
         </div>
       </div>
@@ -65,29 +65,29 @@
         class="font-semibold text-blue-150 relative -translate-x-4 h-[300px]"
       >
         <div
-          class="text-[24px] md:text-[32px] absolute top-0 px-[30px] z-10 flex flex-col justify-center items-start w-[1091px] h-[230px] gap1 md:gap-3"
+          class="text-[20px] md:text-[32px] absolute top-0 px-[30px] z-10 flex flex-col justify-center items-start w-[1091px] h-[230px] gap1 md:gap-3"
         >
           {{ title }}
           <button
-            class="bg-blue-150 rounded-[30px] py-[1px] px-[21px] self-start md:self-center md:ml-[50px]"
+            class="bg-blue-150 rounded-[30px] py-[1px] px-2 md:px-[1rem] self-start md:self-center md:ml-[50px] leading-[10px] md:leading-normal"
             @click="toggleNewsModal"
           >
             <span
-              class="text-xl md:text-2xl leading-[40px] font-semibold text-white"
+              class="text-sm md:text-2xl md:leading-[40px] font-semibold text-white"
             >
               暸解更多</span
             >
           </button>
         </div>
         <div class="h-[230px] absolute top-0 left-0">
-          <img :src="title_bg" alt="title_bg" class="w-full h-full" />
+          <img :src="title_bg" alt="title_bg" class=" h-full w-auto" />
         </div>
       </div>
     </section>
 
     <section
       id="services"
-      class="h-[1080px] flex flex-col justify-center px-[63px] py-[177px]"
+      class="h-[1080px] flex flex-col justify-center p-4 md:px-[63px] md:py-[177px]"
     >
       <AppTitle text="民眾服務信箱"></AppTitle>
 
@@ -107,13 +107,13 @@
         <div
           class="absolute top-[50%] flex flex-col justify-center items-center"
         >
-          <h2 class="text-[32px] font-semibold text-red-250 m-[22px]">
+          <h2 class="text-2xl md:text-[32px] font-semibold text-red-250 m-[22px]">
             您的聲音，我們的行動！
           </h2>
-          <div class="text-2xl font-medium text-black-default leading-[50px]">
+          <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
             親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。
           </div>
-          <div class="text-2xl font-medium text-black-default leading-[50px]">
+          <div class="text-lg md:text-2xl font-medium text-black-default leading-[50px]">
             分享您的想法，一同為我們的未來打造更美好！！
           </div>
         </div>
