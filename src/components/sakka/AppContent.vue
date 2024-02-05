@@ -66,6 +66,7 @@
       >
         <div
           class="text-[20px] md:text-[32px] absolute top-0 px-[30px] z-10 flex flex-col justify-center items-start w-[1091px] h-[230px] gap1 md:gap-3"
+          
         >
           {{ title }}
           <button
@@ -74,8 +75,7 @@
           >
             <span
               class="text-sm md:text-2xl md:leading-[40px] font-semibold text-white"
-            >
-              暸解更多</span
+            >暸解更多</span
             >
           </button>
         </div>
