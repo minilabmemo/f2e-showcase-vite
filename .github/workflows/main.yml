@@ -34,7 +34,7 @@ jobs:
           build: npm run build
           browser: chrome
           wait-on: http://localhost:5173
-          start: npm run dev
+          start:  npx vite --host
           
   # Single deploy job since we're just deploying
   deploy:
