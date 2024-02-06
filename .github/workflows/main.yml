@@ -33,9 +33,9 @@ jobs:
         with:
           build: npm run build
           browser: chrome
-          wait-on: http://localhost:5173
-          start:  npx vite --host
-          
+          wait-on: http://localhost:4173
+          start: npm run test:e2e:dev
+
   # Single deploy job since we're just deploying
   deploy:
     needs: cypress-run

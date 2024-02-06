@@ -5,12 +5,12 @@ describe('My First Test', () => {
     cy.visit('/meow/')
     cy.contains('li', '關於薩卡')
     cy.contains('li', '關於薩卡').click();
-    cy.url().should('eq', 'http://localhost:5173/meow/');
+    cy.url().should('eq', 'http://localhost:4173/meow/');
   })
   it('click nav', () => {
     cy.visit('/meow/')
     cy.contains('li', '關於薩卡').click();
-    cy.url().should('eq', 'http://localhost:5173/meow/');
+    cy.url().should('eq', 'http://localhost:4173/meow/');
   })
   it('click about modal and close', () => {
     cy.visit('/meow/')
