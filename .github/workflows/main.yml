@@ -32,7 +32,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run build
+          wait-on: http://localhost:5173
           start: npm run dev
+          
   # Single deploy job since we're just deploying
   deploy:
     environment:
