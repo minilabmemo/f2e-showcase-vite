@@ -33,7 +33,7 @@ jobs:
         with:
           build: npm run build
           browser: chrome
-          wait-on: http://localhost:5173
+          wait-on: http://localhost:4173
           start: npm run dev
           
   # Single deploy job since we're just deploying

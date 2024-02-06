@@ -26,7 +26,7 @@ describe('My First Test', () => {
     cy.contains('button', '暸解更多').click();
     cy.get('#newsModal').should('be.visible'); 
     cy.get('img[alt="close"]').click();
-    cy.get('#newsModal').should('not.be.visible'); 
+    cy.get('#newsModal').should('not.exist'); 
 
   })
 })
