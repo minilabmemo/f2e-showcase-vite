@@ -59,7 +59,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Execute Unit tests
-	      run: npm run test:unit
+        run: npm run test:unit
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
