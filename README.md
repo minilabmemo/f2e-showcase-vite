@@ -31,9 +31,16 @@ The F2E 六角學院 修煉精神光屋 2023 Mission 1 - 立委競選官網，�
 - Typescript
 - tailwind css
 
+## 測試
+
+- test : `npm run test:ui` ,open http://localhost:51204/**vitest**/#/?file=378120240
+- e2e :`npm run test:e2e:dev`
+
 ## 部署
 
 Use .github/workflows Actions.
+
+- Jobs: test/cypress-run->deploy
 
 ---
 
