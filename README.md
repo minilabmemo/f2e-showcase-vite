@@ -13,17 +13,31 @@ entry points
   - https://minilabmemo.github.io/f2e-showcase-vite/
   - https://minilabmemo.github.io/f2e-showcase-vite/meow/
 
-### meowskka 頁面
+### 分支 - meowskka 作品頁面
 
-- 功能說明頁面請點擊 [f2e-election-meowsakka](https://github.com/minilabmemo/f2e-election-meowsakka/blob/main/README.md)
+- meowskka 首頁 https://minilabmemo.github.io/f2e-showcase-vite/meow/
 
-## deploy
+#### 作品說明
+
+The F2E 六角學院 修煉精神光屋 2023 Mission 1 - 立委競選官網，示範網頁
+
+- 設計稿特別感謝 團隊名稱：團體組長/薩卡班甲魚｜ UI 設計｜ OuO 提供。
+- 網頁網址 https://minilabmemo.github.io/f2e-election-meowsakka/
+- 功能說明：一頁式介紹頁面，關於薩卡/政策/活動/服務頁面說明文字。
+
+## 使用技術
+
+- Vue3
+- Typescript
+- tailwind css
+
+## 部署
 
 Use .github/workflows Actions.
 
 ---
 
-# f2e-showcase-vite
+# f2e-showcase-vite 專案建立細節
 
 This template should help get you started developing with Vue 3 in Vite.
 

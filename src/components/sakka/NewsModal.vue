@@ -75,8 +75,9 @@
 
       <div
         v-if="!matches"
-        class="absolute bg-red-150 w-[3px] left-1/2 -translate-x-1/2 top-[50px] -bottom-[300px] z-0"
+        class="line absolute bg-red-150 w-[3px] left-1/2 -translate-x-1/2 top-[50px] -bottom-[300px] z-0"
         ref="lineRef"
+     
       >
         <div
           class="bg-red-250 w-[20px] h-[20px] rounded-[50%] absolute right-0 top-0 translate-x-1/2"
